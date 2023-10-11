@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,6 +27,30 @@
         <a href="#faq" class="tracking-widest hover:text-softRed">FAQ</a>
 
         <a href="#" class="px-8 py-2 text-white bg-softRed border-2 border-softRed rounded-lg shadow-md hover:text-softRed hover:bg-white">Login</a>
+      </div>
+       <!-- hamburger btn  -->
+       <button id="menu-btn" class="z-30 block md:hidden focus:outline-none hamburger">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+       </button>
+    </div>
+    <!-- mobile btn -->
+    <div id="menu" class="fixed inset-0 z-20 hidden flex-col items-center self-end w-full h-full m-h-screen px-6 py-1 pt-24 pb-4 tracking-widest text-white uppercase divide-y divide-gray-500 opacity-90 bg-veryDarkBlue">
+      <div class="w-full py-3 text-center">
+        <a href="#features" class="block hover:text-softRed">Features</a>
+      </div>
+
+      <div class="w-full py-3 text-center">
+        <a href="#download" class="block hover:text-softRed">Download</a>
+      </div>    
+      
+      <div class="w-full py-3 text-center">
+        <a href="#faq" class="block hover:text-softRed">FAQ</a>
+      </div>      
+      
+      <div class="w-full py-3 text-center">
+        <a href="#login" class="block hover:text-softRed">Login</a>
       </div>
     </div>
   </nav>
@@ -160,7 +184,7 @@
           </div>
         </div>    
         
-            <!-- panel 3 -->
+        <!-- panel 3 -->
         <div class="flex flex-col hidden py-5 md:flex-row md:space-x-7 panel-3">
           <!-- panel img -->
           <div class="flex justify-center md:w-1/2">
@@ -203,7 +227,276 @@
     <!-- download boxes -->
     <section id="download-boxes" class="py-32">
       <!-- boxes container -->
-      .relative.flex.flex-col.items-center.max-w-5xl.mx-auto.space-y-10.p
+      <div class="relative flex flex-col items-center max-w-5xl mx-auto space-y-10 px-10 md:px-6 md:space-y-0 md:space-x-7 md:flex-row">
+        <!-- box 1 -->
+        <div class="flex flex-col w-full py-6 space-y-4 text-center rounded-lg shadow-lg md:w-1/3">
+          <div class="flex justify-center">
+            <img src="images/logo-chrome.svg" alt="">
+          </div>
+          <!-- text -->
+          <h5 class="pt-6 text-xl font-bold">
+            Add to Chrome
+          </h5>
+          <p class="text-gray-400">
+            Minimum version 62
+          </p>
+
+          <!-- dots -->
+          <div class="bg-dots bg-repeat-x px-6 pt-6 capitalize">
+             <a
+              href="#"
+              class="block w-full py-3 text-white duration-200 border-2 rounded-lg bg-softBlue hover:text-softBlue hover:bg-white border-softBlue"
+              >Add & Install Extension</a
+            >
+          </div>
+        </div>
+
+        <!--box 2  -->
+        <div class="w-full md:w-1/3">
+          <div class="flex flex-col w-full py-6 space-y-4 text-center rounded-lg shadow-lg md:mt-8">
+          <div class="flex justify-center">
+            <img src="images/logo-firefox.svg" alt="">
+          </div>
+          <!-- text -->
+          <h5 class="pt-6 text-xl font-bold">
+            Add to Firefox
+          </h5>
+          <p class="text-gray-400">
+            Minimum version 55
+          </p>
+
+          <!-- dots -->
+          <div class="bg-dots bg-repeat-x px-6 pt-6 capitalize">
+             <a
+              href="#"
+              class="block w-full py-3 text-white duration-200 border-2 rounded-lg bg-softBlue hover:text-softBlue hover:bg-white border-softBlue"
+              >Add & Install Extension</a
+            >
+          </div>
+        </div>
+        </div>   
+        
+        <!--box 3 -->
+        <div class="w-full md:w-1/3">
+          <div class="flex flex-col w-full py-6 space-y-4 text-center rounded-lg shadow-lg md:mt-16">
+          <div class="flex justify-center">
+            <img src="images/logo-opera.svg" alt="">
+          </div>
+          <!-- text -->
+          <h5 class="pt-6 text-xl font-bold">
+            Add to Opera
+          </h5>
+          <p class="text-gray-400">
+            Minimum version 46
+          </p>
+
+          <!-- dots -->
+          <div class="bg-dots bg-repeat-x px-6 pt-6 capitalize">
+             <a
+              href="#"
+              class="block w-full py-3 text-white duration-200 border-2 rounded-lg bg-softBlue hover:text-softBlue hover:bg-white border-softBlue"
+              >Add & Install Extension</a
+            >
+          </div>
+        </div>
+        </div>
+      </div>
     </section>
+
+    <!-- FAQ heading -->
+    <section id="faq">
+      <div class="container mx-auto">
+        <h2 class="mb-2 text-3xl font-semibold text-center md:text-4xl">
+          Frequently Asked Questions
+        </h2>
+        <p class="max-w-lg px-6 mx-auto texxt-center text-grayishBlue">
+          Here are some of our FAQs. If you have any other questions you'd like
+          answered please feel free to email us.
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ accordion -->
+    <section id="faq-accordion">
+      <!-- main container -->
+      <div class="container mx-auto px-6 mb-32">
+        <!-- accordion container -->
+        <div class="max-w-2xl m-8 mx-auto overflow-hidden">
+          <!-- tab 1 -->
+          <div class="py-1 border-b outline-none group" tabindex="1">
+            <!-- ta flex container -->
+            <div class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer group ease">
+              <!-- tab title -->
+              <div class="transition duration-500 ease group-hover:text-red-500">
+                What is Bookmark?
+              </div>
+              <!-- arrow -->
+              <div class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-red-500">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <!-- tab inner content -->
+            <div class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease">
+              <p class="py-2 text-justify text-gray-400">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sit facilis architecto laudantium aliquam expedita corrupti ipsum odio ut sunt illo non saepe alias, ducimus unde consequatur quos harum cum ipsa libero explicabo, quis exercitationem illum. Eum, minus alias. Blanditiis neque amet, rem error voluptatem repudiandae sunt doloribus ab accusantium.
+              </p>
+            </div>
+          </div>    
+          
+          <!-- tab 2 -->
+          <div class="py-1 border-b outline-none group" tabindex="2">
+            <!-- ta flex container -->
+            <div class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer group ease">
+              <!-- tab title -->
+              <div class="transition duration-500 ease group-hover:text-red-500">
+                 How can I request a new browser?
+              </div>
+              <!-- arrow -->
+              <div class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-red-500">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <!-- tab inner content -->
+            <div class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease">
+              <p class="py-2 text-justify text-gray-400">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sit facilis architecto laudantium aliquam expedita corrupti ipsum odio ut sunt illo non saepe alias, ducimus unde consequatur quos harum cum ipsa libero explicabo, quis exercitationem illum. Eum, minus alias. Blanditiis neque amet, rem error voluptatem repudiandae sunt doloribus ab accusantium.
+              </p>
+            </div>
+          </div>   
+          
+          <!-- tab 3 -->
+          <div class="py-1 border-b outline-none group" tabindex="3">
+            <!-- ta flex container -->
+            <div class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer group ease">
+              <!-- tab title -->
+              <div class="transition duration-500 ease group-hover:text-red-500">
+                 Is ther a mobile app?
+              </div>
+              <!-- arrow -->
+              <div class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-red-500">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <!-- tab inner content -->
+            <div class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease">
+              <p class="py-2 text-justify text-gray-400">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sit facilis architecto laudantium aliquam expedita corrupti ipsum odio ut sunt illo non saepe alias, ducimus unde consequatur quos harum cum ipsa libero explicabo, quis exercitationem illum. Eum, minus alias. Blanditiis neque amet, rem error voluptatem repudiandae sunt doloribus ab accusantium.
+              </p>
+            </div>
+          </div>   
+          
+          <!-- tab 4 -->
+          <div class="py-1 border-b outline-none group" tabindex="4">
+            <!-- ta flex container -->
+            <div class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer group ease">
+              <!-- tab title -->
+              <div class="transition duration-500 ease group-hover:text-red-500">
+                 What about other Chromium browsers
+              </div>
+              <!-- arrow -->
+              <div class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-red-500">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <!-- tab inner content -->
+            <div class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease">
+              <p class="py-2 text-justify text-gray-400">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sit facilis architecto laudantium aliquam expedita corrupti ipsum odio ut sunt illo non saepe alias, ducimus unde consequatur quos harum cum ipsa libero explicabo, quis exercitationem illum. Eum, minus alias. Blanditiis neque amet, rem error voluptatem repudiandae sunt doloribus ab accusantium.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- newsletter section -->
+    <section id="newsletter" class="bg-softBlue">
+      <!-- main container -->
+      <div class="max-w-lg mx-auto py-24">
+        <p class="mb-6 text-lg tracking-widest text-center text-white uppercas">
+          35,000+ Already Joined
+        </p>
+        <h2 class="px-3 mb-6 text-3xl font-semibold text-center text-white md:text-4xl">
+          Stay up-to-date with what we're doing
+        </h2>
+
+        <!-- form -->
+        <form class="flex flex-col items-start justify-center max-w-2xl mx-auto space-y-6 text-base px-5 md:flex-row md:space-y-0 md:space-x-4 md:px-0">
+          <!-- input &  btn-->
+          <div class="flex flex-col justify-between items-center mx-auto md:flex-row md:mx-0">
+            <input
+              type="text"
+              class="flex-1 px-6 pt-3 pb-2 mb-4 rounded-lg border-1 border-white focus:outline-none md:mr-3 md:mb-0"
+              placeholder="Enter your email address"
+            />
+
+            <input
+              type="submit"
+              class="inline-flex px-6 py-3 font-semibold text-center text-white duration-200 transform rounded-lg cursor-pointer focus:outline-none bg-softRed hover:opacity-90"
+              value="Contact Us"
+            />
+          </div>
+        </form>
+      </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer class="py-16 bg-veryDarkBlue">
+      <!-- footer fex container -->
+      <div class="container flex flex-col items-center justify-between mx-auto space-y-16 px-6 md:flex-row md:space-y-0">
+        <!-- logo / menu container -->
+        <div class="flex flex-col items-center justify-between space-y-8 text-lg font-light md:flex-row md:space-y-0 md:space-x-14 text-grayishBlue">
+          <img src="images/logo-bookmark-footer.svg" alt="" class="mb1">
+          <a href="#features" class="uppercase hover:text-softRed">Features</a>
+          <a href="#download" class="uppercase hover:text-softRed">Download</a>
+          <a href="#faq" class="uppercase hover:text-softRed">FAQ</a>
+        </div>
+
+
+        <!-- social container -->
+        <div class="flex space-x-10">
+
+          <a href="https://www.facebook.com/">
+            <img src="images/icon-facebook.svg" alt="" class="h-6 ficon" />
+          </a>
+          <a href="https://twitter.com/">
+            <img src="images/icon-twitter.svg" alt="" class="h-6 ficon" />
+          </a>
+        </div>
+      </div>
+    </footer>
 </body>
 </html>
